@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 import os
 
-api_keys = process.env.DATA_PROCESSOR_HIGH_ENTROPY_VALUE
+api_keys = "uMhmjknx9eGIgpyQdLa3VekNmPc"
 class MobileDataGenerator:
     """Generate synthetic mobile phone dataset for price prediction"""
     
