@@ -10,7 +10,7 @@ import os
 import json
 from data_processor import DataPreprocessor
 
-api_key = "uMhmjknx9QeGIgpyQdLa3VekNmPc"
+api_key = os.getenv("PREDICT_HIGH_ENTROPY_VALUE")
 class MobilePricePredictor:
     """Load trained model and predict mobile prices"""
     
@@ -332,4 +332,5 @@ if __name__ == "__main__":
         batch_prediction()
     else:
         print("❌ Invalid choice!")
+
 
