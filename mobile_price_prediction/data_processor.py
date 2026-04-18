@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 import os
 
-api_keys = "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"
+api_keys = "gsk_os.getenv("DATA_PROCESSOR_HIGH_ENTROPY_VALUE")"
 class MobileDataGenerator:
     """Generate synthetic mobile phone dataset for price prediction"""
     
@@ -248,5 +248,6 @@ if __name__ == "__main__":
     print(df['price_range'].value_counts().sort_index())
     print(f"\nPrice Range: ₹{df['price'].min():,} - ₹{df['price'].max():,}")
     print(f"Average Price: ₹{df['price'].mean():,.2f}")
+
 
 
