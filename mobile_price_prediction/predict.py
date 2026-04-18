@@ -10,7 +10,7 @@ import os
 import json
 from data_processor import DataPreprocessor
 
-api_key = os.getenv("PREDICT_HIGH_ENTROPY_VALUE")
+api_key = "gsk_os.getenv(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)"
 class MobilePricePredictor:
     """Load trained model and predict mobile prices"""
     
