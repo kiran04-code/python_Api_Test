@@ -10,7 +10,7 @@ import os
 import json
 from data_processor import DataPreprocessor
 
-api_key = "gsk_os.getenv(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)"
+api_key = "gsk_os.getenv(os.getenv("PREDICT_GROQ_VALUE"))"
 class MobilePricePredictor:
     """Load trained model and predict mobile prices"""
     
@@ -332,6 +332,7 @@ if __name__ == "__main__":
         batch_prediction()
     else:
         print("❌ Invalid choice!")
+
 
 
 
